@@ -1,1681 +1,222 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>경기도의회</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="subject" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="copyright" content="copyrights Seoul Metropolitan Govement all rights reserved">
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="경기도의회">
-    <meta property="og:title" content="경기도의회">
-    <meta property="og:url" content="http://1.215.119.85:8880/site/main/home">
-    <meta property="og:description" content="경기도의회,Home1, 메인 사이트로 최초 생성돼 있고 삭제할 수 없다.
-cms 를 호출할 사이트 이며 사용자 사이트가 하나일 경우 같은도메인을 사용하면 된다.">
-    <meta property="og:image" content="http://1.215.119.85:8880/design/theme/youth/images/logo-200x200.gif">
-    <meta property="og:image:height" content="200">
-    <meta property="og:image:width" content="200">
-    <meta name="name" content="">
-    <meta name="keywords" content="경기도의회,Home1">
-    <meta name="description" content="경기도의회,Home1, 메인 사이트로 최초 생성돼 있고 삭제할 수 없다.
-cms 를 호출할 사이트 이며 사용자 사이트가 하나일 경우 같은도메인을 사용하면 된다.">
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="image_src" content="http://1.215.119.85:8880/design/theme/youth/images/logo-200x200.gif">
-    <!-- //SEO -->
-
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <!--// css-->
-
-    <script src="./js/jquery-1.11.2.min.js"></script>
-    <script src="./js/gnb.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/run.js"></script>
-    <!--//js-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>잡아바 퍼블리싱</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
-    <noscript style="display: block;width: 100%;">자바스크립트를 지원하지 않는 브라우저에서는 일부 기능을 사용하실 수 없습니다.<br />
-        <a href="https://www.enable-javascript.com/ko" target="_blank" style="color:#2979e6">https://www.enable-javascript.com/ko</a> <br /> 브라우저에서 자바스크립트를 활성화하는 방법을 참고 하세요.
-    </noscript>
-    <!-- wrap -->
-    <div id="wrap">
-        <!-- skip navigation -->
-        <div class="skipnav">
-            <a href="#content_wrap">본문 바로가기</a>
-            <a href="#gnb">주메뉴 바로가기</a>
-        </div>
-        <!-- //skip navigation -->
-        <!-- header -->
-        <div id="tnb">
-            <div class="container">
-                <div class="fl">
-                    <ul class="site_tab">
-                        <li>
-                            <a href="#" class="active">경기도의회</a>
-                        </li>
-                        <li>
-                            <a href="#">회의록</a>
-                        </li>
-                        <li>
-                            <a href="#">의안정보</a>
-                        </li>
-                        <li>
-                            <a href="#">어린이</a>
-                        </li>
-                        <li>
-                            <a href="#">지역상담소</a>
-                        </li>
-                        <li>
-                            <a href="#">e-브리핑</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--//fl-->
-                <div class="fr">
-                    <div class="zoom-element">
-                        <span class="zoom-btn out"><a href="#" onclick="javascript:zoomControl.zoomOut()"><span class="hd-element">화면축소</span></a></span><span class="zoom-text"><a href="#" title="화면확대축소 초기화" onclick="javascript:zoomControl.zoomReset()">100%</a></span><span class="zoom-btn in"><a href="#" onclick="javascript:zoomControl.zoomIn()"><span class="hd-element">화면확대</span></a></span>
-                        <!-- 접근성 -->
-                    </div>
-                    <ul class="sns_list">
-                        <li>
-                            <a href="https://www.instagram.com/gyeonggido_assembly/" class="intar" target="_blank" title="경기도 의회 인스타그램">경기도 의회 인스타그램</a>
-                        </li>
-                        <li>
-                            <a href="https://blog.naver.com/gassembly" class="blog" target="_blank" title="경기도 의회 블로그">경기도 의회 블로그</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/gassembly" class="facebook" target="_blank" title="경기도 의회 페이스북">경기도 의회 페이스북</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/user/ggassembly" class="youtube" target="_blank" title="경기도 의회 유튜브">경기도 의회 유튜브</a>
-                        </li>
-                        <li>
-                            <a href="https://story.kakao.com/ch/gassembly" class="kakao" target="_blank" title="경기도 의회 카카오스토리">경기도 의회 카카오스토리</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/gga_news" class="twitter" target="_blank" title="경기도 의회 트위터">경기도 의회 트위터</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--//fr-->
-            </div>
-            <!--//container-->
-        </div>
-        <!--//tnb-->
-
-
-        <!-- header -->
-        <div id="hd">
-            <span class="bg_gnb"></span>
-            <div class="container">
-                <div class="hd_top">
-                    <h1 class="logo">
-                        <a href="/site/main/home">
-                            <img src="./images/emblem.png" alt="경기도 의회 엠블럼">
-                            <div class="logo_t">
-                               <span class="logo_title">경기도의회</span>
-                                <span>Gyeonggido Assembly</span>
-                            </div>
-                        </a>
-                    </h1>
-
-                    <!--검색-->
-                    <div class="sch_wrap">
-                        <div class="sch_form">
-                            <form id="frm" action="//youth.seoul.go.kr/search/search.s" method="post">
-                                <label for="pQuery_tmp" class="sch_tit">통합검색</label>
-                                <input type="hidden" name="pQuery" id="pQuery">
-                                <div class="sch_box">
-                                    <input type="text" name="pQuery_tmp" id="pQuery_tmp" class="sch_open" title="검색어를 입력하세요" placeholder="검색어를 입력하세요.">
-                                    <button id="totSearch" class="btn sch sch_open">검색하기</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!--검색-->
-
-                    <div class="mb_search">
-                        <button class="mb_sch">통합검색</button>
-                    </div>
-                    <div class="m_menu_btn">
-                        <button type="button" class="btn all sch_close mb_close "><span>메뉴 열기</span></button>
-                    </div>
-
-
-                    <div class="select-ui li-slt">
-                        <label for="lang" class="hide">언어선택</label>
-                        <select class="lang" id="lang">
-                            <option selected>
-                                Language
-                            </option>
-                            <option value="한국어">
-                                한국어
-                            </option>
-                            <option value="English">
-                                English
-                            </option>
-                        </select>
-                    </div>
-                </div>
-                <!--//hd_top-->
-            </div>
-            <!--//container-->
-
-
-            <!-- gnb start -->
-            <div class="gnb_wrap">
-                <div class="m_gnb_top">
-                    <ul class="lang_list">
-                        <li>
-                            <a href="#">ENGLISH</a>
-                        </li>
-                        <li>
-                            <a href="#">JAPANESE</a>
-                        </li>
-                        <li>
-                            <a href="#">CHINESE</a>
-                        </li>
-                    </ul>
-                    <button class="m_close" type="button">메뉴닫기</button>
-                </div>
-                <div id="gnb">
-                    <!--m_gnb_top-->
-                    <ul class=" nsq clearfix">
-                        <li class="depth1"><a href="/site/main/board/pblcntc/list">의회소식</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>의회소식</h4>
-                                        <p>경기도의회의 의회소식을<br /> 확인 할 수 있습니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">공고/소식</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">의정캘린더</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">연간회기일정</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">본회의/상임위</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의정뉴스</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">보도자료</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">세미나·토론회</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의정갤러리</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="test">의정활동</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>의정활동</h4>
-                                        <p>경기도의회의 의정활동을<br /> 확인 할 수 있습니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">의사일정</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">의정캘린더</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">연간회기일정</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">본회의/상임위</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">위원회 활동</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">위원회활동</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">도정질문/답변</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">5분자유발언 등</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의원연구단체</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">국제교류활동</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">제 10대 국제친선연맹소개</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">활동보고서</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의정활동영상</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">인터뷰 및 홍보영상</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="test">위원회</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>위원회</h4>
-                                        <p>경기도의회의 위원회소식을<br /> 확인 할 수 있습니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">의원회 최근 목록</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의안처리</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">위원회갤러리</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">위원회자료실</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">상임위원회</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">특별위원회</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="test">의원소개</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>의원소개</h4>
-                                        <p>경기도의회의 의원소개를<br /> 확인 할 수 있습니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">의장단</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">헌역의원</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">역대의원</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">언론보도</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">칼럼/기고문</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">특별위원회</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="test">도민참여</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>도민참여</h4>
-                                        <p>경기도의회의 도민참여를<br /> 확인 할 수 있습니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">지역상담소</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">진정민원</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">어린이의회</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">방청/견학/대관 이용안내</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">방청안내</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">견학안내</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">대관(회의실,로비)이용안내</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">견학앨범</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">내신청내역보기</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의정모니터</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">의정모니터로그인</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">의정모니터 우수제안 소개</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">사전정보공표</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="/site/main/content/grtng">의회소개</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>의회소개</h4>
-                                        <p>경기도의회의 의회를 소개합니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">열린 의장실</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">인사말</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">약력</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">연설문/축사</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의회구성</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의회운영</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">교섭단체</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">목적 및 구성요건</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">더불어민주당</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">비교섭단체</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의회연혁</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">홍보영상</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">사무처</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">조직현황</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">담당업무</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">전화번호</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">업무계획</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">청사안내</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">층별안내</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">상징물</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">찾아오시는길</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="/site/main/content/lgsltNtc">자료실</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>자료실</h4>
-                                        <p>경기도의회의 자료실입니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">법규정보</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">입법예고</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">현행법령</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도자치법규</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청 자치법규</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">선거법사례</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">예·결산 관련정보</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">예결산 관련 분석 관련 정보</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도예산서</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도결산서</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청예산서</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청결산서</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">예산안정보</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">경기도예산안</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도결산안</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청예산안</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청결산안</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">의회간행물</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">우송신청변경</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">입법정책보고서</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">여론조사 공개</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">자주묻는 질문</a>
-                                        </li>
-                                        <li class="depth2_li">
-                                            <a href="#">용어해설</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-                        <li class="depth1"><a href="/site/main/content/lgsltNtc">이용안내</a>
-                            <!--gnbmenu_wrap-->
-                            <div class="gnbmenu_wrap">
-                                <div class="gnbmenu_inner">
-                                    <div class="title">
-                                        <h4>이용안내</h4>
-                                        <p>경기도의회의 이용안내입니다.</p>
-                                    </div>
-                                    <ul class="depth2">
-                                        <li class="depth2_li">
-                                            <a href="#">법규정보</a>
-                                            <ul class="depth3">
-                                                <li>
-                                                    <a href="#">입법예고</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">현행법령</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도자치법규</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">경기도교육청 자치법규</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">선거법사례</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--//gnbmenu_wrap-->
-                        </li>
-
-                    </ul>
-                    <button type="button" class="all sch_close menu_btn"><span>전체 메뉴 열기</span></button>
-
-                </div>
-                <ul class="sns_list">
-                    <li>
-                        <a href="https://blog.naver.com/gassembly" class="m_blog" target="_blank">블로그</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/gassembly" class="m_facebook">페이스북</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/user/ggassembly" class="m_youtube" target="_blank">유튜브</a>
-                    </li>
-                    <li>
-                        <a href="https://story.kakao.com/ch/gassembly" class="m_kakao" target="_blank">카카오스토리</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/gga_news" class="m_twitter" target="_blank">트위터</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/gyeonggido_assembly/" target="_blank" class="m_instagram">인스타그램</a>
-                    </li>
-                </ul>
-            </div>
-
-
-
-
-            <!--전체메뉴-->
-            <div class="all_menu">
-                <div class="all_menu_top clear">
-                    <div class="fl">
-                        <h3>전체메뉴</h3>
-                        <p>All Menu</p>
-                    </div>
-                    <div class="fr">
-                        <a href="#" class="am_close">닫기</a>
-                    </div>
-                </div>
-                <div class="am_cont">
-                    <!--의회소식-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">의회소식</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">의회소식</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의정뉴스</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">보도자료</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">세미나·토론</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의정갤러리</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--의회소식-->
-                    <!--의정활동-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">의정활동</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">의사일정</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">의정캘린더</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">연간회기일정</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">본회의/상임위</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">위원회 활동</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">위원회활동</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">도정질문/답변</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">5분자유발언 등</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의원연구단체</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">국제교류활동</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">제 10대 국제친선연맹소개</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">활동보고서</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의정활동영상</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">인터뷰 및 홍보영상</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--의정활동-->
-                    <!--위원회-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">위원회</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">위원회 최근목록</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의안처리</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">위원회갤러리</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">위원회자료실</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">상임위원회</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">특별위원회</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--위원회-->
-                    <!--의원소개-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">의원소개</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">의장단</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">헌역의원</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">역대의원</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">언론보도</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">칼럼/기고문</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--의원소개-->
-                    <!--도민참여-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">도민참여</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">진정민원</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">행정사무감사 도민제보</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">어린이의회</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">방청/견학/대관 이용안내</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">방청안내</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">견학안내</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">대관(회의실,로비) 이용안내</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">견학앨범</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">내신청내역보기</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의정모니터</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">의정모니터로그인</a>
-                                    </li>
-                                    <li><a href="#">의정모니터 우수제안 소개</a></li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">자유게시판</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">사전정보공표</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!--도민참여-->
-                    <!--의회소개-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">의회소개</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">열린의장실</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">인사말</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">약력</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">연설물/축사</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회구성</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회운영</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">교섭단체</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">목적 및 구성요건</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">더불어민주당</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">비교섭단체</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회연혁</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">홍보영상</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">사무처</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">조직현황</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">담당업무</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">전화번호</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">업무계획</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">청사안내</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">층별안내</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">상징물</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">찾아오시는 길</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--의회소개-->
-                    <!--자료실-->
-                    <div class="am_dept">
-                        <a href="#" class="am_tit">자료실</a>
-                        <ul class="am_ul">
-                            <li class="am_dept1">
-                                <a href="#">법규정보</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">입법예고</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">현행법령</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도자치법규</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도교육청 자치법규</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">선거법사례</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">예결산 관련정보</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">예결산 관련 분석 관련 정보</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도예산서</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도결산서</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도교육청예산서</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도교육청결산서</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">예산안정보</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">경기도예산안</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도결산안</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도교육청예산안</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">경기도교육청결산안</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회간행물</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">우송신청변경
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">입법정책보고서</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">여론조사 공개</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">자주묻는 질문</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">용어해설</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회도서관</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">의회마크</a>
-                                <ul class="am_dep2">
-                                    <li>
-                                        <a href="#">의회마크</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">의회BI</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">업무추진비공개</a>
-                            </li>
-                            <li class="am_dept1">
-                                <a href="#">홍보자료</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--자료실-->
-                </div>
-            </div>
-            <!--//전체메뉴-->
-            <!-- gnb end -->
-        </div>
-
-        <!-- main -->
-        <div id="content_wrap" class="main">
-            <div class="main_bg">
-                <div class="container">
-                    <!-- main visual -->
-                    <div class="main_visual">
-                        <!--main_banner-->
-                        <div class="main_banner">
-                            <!--main_slick-->
-                            <div class="main_slick">
-                                <div><img src="./images/main_banner01.png" alt="신종 코로나 바이러스 감영증 발열,호흡기증상 발생시 1339 또는 보건소로 전화주세요. 경기도의회도 확산 방지를 위해 최선을 다하겠습니다.">
-                                </div>
-                                <div><img src="./images/main_banner01.png" alt="신종 코로나 바이러스 감영증 발열,호흡기증상 발생시 1339 또는 보건소로 전화주세요. 경기도의회도 확산 방지를 위해 최선을 다하겠습니다.">
-                                </div>
-                            </div>
-                            <!--//main_slick-->
-                            <div class="news-btn">
-                                <div id="slick-log">
-                                    <div><strong></strong> / <span></span></div>
-                                </div>
-                                <div class="control_btn">
-                                    <button type="button" class="slick-control"><span class="sr-only">정지</span></button>
-                                    <button type="button" class="slick-arrow fb-prev"><span class="sr-only">이전</span></button>
-                                    <button type="button" class="slick-arrow fb-next"><span class="sr-only">다음</span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--//main_banner-->
-
-                        <!--경기도 의회 의장-->
-                        <div class="main_a1 main_article pd25">
-                            <h3 class="f22">경기도의회</h3>
-                            <p class="f22">의장 <span class="blue sn f38">송한준</span></p>
-                            <a href="#" class="a1_btn f15">인사말</a>
-                        </div>
-                        <!--//경기도 의회 의장-->
-
-
-
-
-
-                        <!--main_s2-->
-                        <div class="main_s2">
-                            <div class="main_s2_left">
-                                <div class="main_a2 main_article">
-                                    <div class="pd20">
-                                        <div class="clear">
-                                            <div class="fl">
-                                                <h3 class="f22">오늘의</h3>
-                                                <p class="f26">의사일정</p>
-                                            </div>
-                                            <div class="a2-date fr">
-                                                <p class="a2-year f18"></p>
-                                                <strong class="a2-mnd f32"><span class="a2-m"></span>.<span class="a2-d"></span></strong>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn f16">비회기중</a>
-                                    </div>
-                                    <ul class="a2_bt clear">
-                                        <li>
-                                            <a href="#" class="f16">회기일정</a>
-                                        </li>
-                                        <li><a href="#" class="f16">연간회기</a></li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="main_a3 main_article pd20">
-                                    <h3 class="f20">의원검색</h3>
-                                    <ul>
-                                        <li>
-                                            <a href="#">지역구</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">위언회</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">정당</a>
-                                        </li>
-                                    </ul>
-                                    <!--의원검색 form-->
-                                    <div class="memb_sch_wrap">
-                                        <form id="memb_sch" action="dd" method="post">
-                                            <label class="hide" for="memb_ip">의원검색</label>
-                                            <div class="sch_box">
-                                                <input type="text" name="memb_ip" id="memb_ip" title="의원명을 입력하세요" placeholder="의원명을 입력하세요">
-                                                <button class="bsch">검색하기</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!--//의원검색 form-->
-
-                                </div>
-                                <!--//main_a3-->
-                            </div>
-                            <!--//main_s2_left-->
-
-
-
-
-                            <!--main_s2_right-->
-                            <div class="main_s2_right">
-                                <div class="main_a4 main_article pd20">
-                                    <h3 class="f24">e-끌림</h3>
-                                    <div class="sns_icon">
-                                        <ul>
-                                            <li class="tab-link tab_facebook"><a href="https://www.facebook.com/gassembly" target="_blank" >페이스북</a></li>
-                                            <li class="tab-link tab_twitter"><a href="https://twitter.com/gga_news" target="_blank" >트위터</a></li>
-                                            <li class="tab-link tab_instagram"><a href="https://www.instagram.com/gyeonggido_assembly/" target="_blank" >인스타그램</a></li>
-                                            <li class="tab-link tab_kakaostory"><a href="https://story.kakao.com/ch/gassembly" target="_blank">카카오스토리</a></li>
-                                        </ul>
-                                    </div>
-                                    <!--sns news탭-->
-                                    <div class="sns_news">
-                                        <ul class="sns_tabs">
-                                            <li class="tab-link current tab_youtube" data-tab="tab-1"><a href="#none">유튜브</a></li>
-                                            <li class="tab-link tab_naverBlog" data-tab="tab-2"><a href="#none">블로그</a></li>
-                                        </ul>
-                                        <!--tab-1-->
-                                        <div id="tab-1" class="tab-content current">
-                                            <div class="products-wrapper e-slider">
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img01.png" alt="헌혈 및 이천 농산물 구입에 동참해주세요!">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            코로나19 이겨낼 수 있는 방법을
-                                                            찾았다고!? feat.헌혈,이천쌀
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img02.png" alt="경기도의회 비상대책단이 전통시장을 찾은이유는?">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            경기도의회 비상대책단이 전통시
-                                                            장을 찾은 이유는?!
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img03.png" alt="경기도의회 60초 짧 뉴스 #코로나19 비상대책본부 #한국지방자치단체 우수조례 대상">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            경기도의회 60초 짧 뉴스 feat. 제3
-                                                            41회 임시회
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img03.png" alt="경기도의회 60초 짧 뉴스 #코로나19 비상대책본부 #한국지방자치단체 우수조례 대상">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            경기도의회 60초 짧 뉴스 feat. 제3
-                                                            41회 임시회
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--//tab-1-->
-                                        <!--tab-2-->
-                                        <div id="tab-2" class="tab-content">
-                                            <div class="products-wrapper e-slider2">
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img01.png" alt="헌혈 및 이천 농산물 구입에 동참해주세요!">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            [네이버] 코로나19 이겨낼 수 있는 방법을
-                                                            찾았다고!? feat.헌혈,이천쌀
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img02.png" alt="경기도의회 비상대책단이 전통시장을 찾은이유는?">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            [네이버]경기도의회 비상대책단이 전통시
-                                                            장을 찾은 이유는?!
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img03.png" alt="경기도의회 60초 짧 뉴스 #코로나19 비상대책본부 #한국지방자치단체 우수조례 대상">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            [네이버] 경기도의회 60초 짧 뉴스 feat. 제3
-                                                            41회 임시회
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-
-                                                <div class="products-block">
-                                                    <a href="#">
-                                                        <div class="e-img">
-                                                            <img src="./images/e-img03.png" alt="경기도의회 60초 짧 뉴스 #코로나19 비상대책본부 #한국지방자치단체 우수조례 대상">
-                                                        </div>
-                                                        <h4 class="e-tit">
-                                                            [네이버]경기도의회 60초 짧 뉴스 feat. 제3
-                                                            41회 임시회
-                                                        </h4>
-                                                        <p class="e-date">
-                                                            2020.02.28.
-                                                        </p>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--//tab-2-->
-                                    </div>
-                                    <!--//sns news탭-->
-
-                                </div>
-                            </div>
-                            <!--//main_s2_right-->
-                        </div>
-                        <!--//main_s2-->
-
-                    </div>
-                    <!--main_visual-->
-
-
-
-
-
-                    <!--main_s3-->
-                    <div class="main_s3">
-                        <div class="main_a4 main_article pd20">
-                            <h3 class="f20">실시간 의회소식</h3>
-                            <ul class="realtime_slider">
-                                <li class="f18"><a href="#">경기도의회 독도사랑국토사랑회, 다케시마의날 폐지촉구</a></li>
-                                <li class="f18"> <a href="#">2020년 경기도의회 제1교육위원회 공무국외출장 주관 여행사 공개 모집2020년 경기도의회 제1교육위원회 공무국외출장 주관 여행사 공개 모집2020년 경기도의회 제1교육위원회 공무국외출장 주관 여행사 공개 모집</a></li>
-                            </ul>
-
-                            <div class="realtime-btn">
-                                <div class="control_btn">
-                                    <button type="button" class="slick-arrow fb-prev2"><span class="sr-only">이전</span></button>
-                                    <div class="slick-log2">
-                                        <div><strong class="yellow"></strong> / <span></span></div>
-                                    </div>
-                                    <button type="button" class="slick-arrow fb-next2"><span class="sr-only">다음</span></button>
-                                    <button type="button" class="slick-control2"><span class="sr-only">정지</span></button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--//main_s3-->
-                </div>
-            </div>
-
-            <!--main_s4-->
-            <div class="main_s4">
-                <div class="container">
-                    <div class="notice">
-                        <div class="notice_top clear">
-                            <ul class="filter fl">
-                                <li><a class="all current" href="#">전체보기</a></li>
-                                <li><a class="filter01" href="#">공고/소식</a></li>
-                                <li><a class="filter02" href="#">위원회활동</a></li>
-                                <li><a class="filter03" href="#">보도자료</a></li>
-                                <li><a class="filter04" href="#">접수의안</a></li>
-                                <li><a class="filter05" href="#">입법예고</a></li>
-                                <li><a class="filter06" href="#">의정갤러리</a></li>
-                            </ul>
-                        </div>
-                        <div class="boxGroup">
-                            <div class="filiter_box filter01 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter01_txt">공고/소식</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-                            <div class="filiter_box filter02 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter02_txt">위원회활동</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-                            <div class="filiter_box filter03 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter03_txt">보도자료</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-                            <div class="filiter_box filter04 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter04_txt">접수의안</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-                            <div class="filiter_box filter05 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter05_txt">입법예고</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-
-                            <div class="filiter_box filter06 main_article in_fbg">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter06_txt">의정갤러리</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-
-                                    <div class="fb_gallery">
-                                        <div class="fb_img">
-                                            <img src="./images/g-img01.png" alt="홈페이지 고도화 착수 보고회">
-                                            <div class="fi_txt">
-                                                <p>의정포털시스템 연구용역최종보고회 및<br />
-                                                    홈페이지 고도화 착수보고회</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="filiter_box filter05 main_article">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter05_txt">입법예고</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-                                    <!--fb_cont-->
-                                    <div class="fb_cont">
-                                        <h3 class="fb-tit f16">
-                                            2020년 경기도의회 제1교육위원회
-                                            공무국외출장 주관 여행사 공개 모집
-                                        </h3>
-                                        <p class="fb-txt f14">
-                                            1. 연수개요 - 연수기간 : 2020. 5. 6(수) ~ 5.
-                                            14(목) / 7박9일 - 연수국가 : 스페인(바르셀
-                                            로나, 마드리드) - 연수목적 : 기관 방문, 우수
-                                            사례 벤치마킹, 자료 수집 등 – 방…
-                                        </p>
-                                    </div>
-                                    <!--//fb_cont-->
-                                </a>
-                            </div>
-                            <div class="filiter_box filter06 main_article in_fbg">
-                                <a href="#">
-                                    <div class="fb_top">
-                                        <span class="filter06_txt">의정갤러리</span>
-                                        <p class="fb_date">2020.01.29</p>
-                                    </div>
-
-                                    <div class="fb_gallery">
-                                        <div class="fb_img">
-                                            <img src="./images/g-img02.png" alt="더불어민주당 코로나 바이러스 관련 브리핑">
-                                            <div class="fi_txt">
-                                                <p>더불어민주당 코로나 바이러스 관련 브리핑</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
-
-
-                        </div>
-                        <!--//boxGroup-->
-                        <div class="more">
-                            <a href="#">더보기</a>
-                        </div>
-                    </div>
-                </div>
-                <!--container-->
-
-            </div>
-            <!--main_s4-->
-
-
-
-            <!--main_s5-->
-            <div class="main_s5">
-                <ul class="main_icoList container">
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item01"></span>
-                            </span>
-                            <p>도정질문</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item02"></span>
-                            </span>
-                            <p>5분자유발언</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item03"></span>
-                            </span>
-                            <p>법규정보</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item04"></span>
-                            </span>
-                            <p>입법정책연구</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item05"></span>
-                            </span>
-                            <p>인터넷생방송</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item06"></span>
-                            </span>
-                            <p>방청/견학</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item07"></span>
-                            </span>
-                            <p>의정뉴스</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="ico_bg">
-                                <span class="ico_item08"></span>
-                            </span>
-                            <p>의회도서관</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!--//main_s5-->
-        </div>
-        <!--main-->
-    </div>
-    <!--//wrap-->
-
-
-    <!--footer-->
-    <div class="foot_site">
-        <div class="container">
-            <ul>
-                <li>
-                    <label for="fs01" class="hide">운영위원회 관련사이트 바로가기</label>
-                    <select class="foot_select" id="fs01">
-                        <option>
-                            운영위원회
-                        </option>
-                    </select>
-                </li>
-                <li>
-                    <label for="fs02" class="hide">의원 관련사이트 바로가기</label>
-                    <select class="foot_select" id="fs02">
-                        <option>
-                            의원
-                        </option>
-                    </select>
-                </li>
-                <li>
-                    <label for="fs03" class="hide">경기도시군의회 관련사이트 바로가기</label>
-                    <select class="foot_select" id="fs03">
-                        <option>
-                            경기도시군의회
-                        </option>
-                    </select>
-                </li>
-                <li>
-                    <label for="fs04" class="hide">전국 시도 의회 관련사이트 바로가기</label>
-                    <select class="foot_select" id="fs04">
-                        <option>
-                            전국 시도 의회
-                        </option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <footer id="footer">
-        <div class="container clear">
-            <img src="./images/foot_logo.png" alt="경기도 의회" class="foot_logo">
-            <div class="foot_txt">
-                <ul class="foot_link">
-                    <li>
-                        <a href="#" class="white">개인정보처리방침</a>
-                    </li>
-                    <li>
-                        <a href="#">이메일무단수집거부</a>
-                    </li>
-                    <li>
-                        <a href="#">오시는길</a>
-                    </li>
-                    <li>
-                        <a href="#">의회전화번호</a>
-                    </li>
-                    <li>
-                        <a href="#">이용안내</a>
-                    </li>
-                </ul>
-                <p>(16444) 경기도 수원시 팔달구 효원로 1가 (매산로3가) 경기도의회 | 대표전화 : 031)8008-7000</p>
-                <p> © GYEONGGIDO ASSEMBLY. All Rights Reserved.</p>
-            </div>
-            <!--foot_txt-->
-            <div class="fr">
-                <img src="./images/qrcode.png" alt="경기도의회 QR코드">
-                <img src="./images/wa.png" alt="웹접근성마크">
-            </div>
-        </div>
-    </footer>
-    <!--//footer-->
-
+<div class="container">
+	<h1>
+		잡아바 퍼블리싱 목록
+		<div class="git"><a href="https://github.com/aldo814/jababa" target="_blank">GitHub 페이지 바로가기</a></div>
+	</h1>
+	<table class="tbl_list">
+	<thead>
+	<tr>
+		<th>NO</th>
+		<th>구분</th>
+		<th>페이지명</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td></td>
+		<td>팝업</td>
+		<td><a href="html/%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4%ED%8C%9D%EC%97%85.html" class="preview" target="_blank">회원탈퇴 팝업</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>테마</td>
+		<td><a href="html/thema/01.html" class="preview" target="_blank">테마 1호 :: 2022 달라지는 정책모음.zip</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>테마</td>
+		<td><a href="html/thema/02.html" class="preview" target="_blank">테마 2호 :: 친환경기업이 떠오르는 이유 </a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>테마</td>
+		<td><a href="html/thema/03.html" class="preview" target="_blank">테마 3호 :: 2022년 찾아가는 공공사무원 </a></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td>테마</td>
+		<td><a href="html/thema/04.html" class="preview" target="_blank">테마 4호 :: 용어로 알아보는 2022 채용 트렌드 </a></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td>테마</td>
+		<td><a href="html/thema/04.html" class="preview" target="_blank">테마 5호 :: 잡아바 밸런스 게임 </a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>이벤트</td>
+		<td><a href="html/event/01.html" class="preview" target="_blank">이벤트 1호 :: 3GO 이벤트</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>이벤트</td>
+		<td><a href="html/event/02.html" class="preview" target="_blank">이벤트 2호 :: 100%당첨 잡아바 행운 룰렛 이벤트</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_메인.html" class="preview" target="_blank">NCS진단_메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_진단1_직종선택.html" class="preview" target="_blank">NCS진단_진단1_직종선택</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_진단2_직업선택.html" class="preview" target="_blank">NCS진단_진단2_직업선택</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_진단3_직업역량진단.html" class="preview" target="_blank">NCS진단_진단3_직업역량진단</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_NCS 직업역량진단결과.html" class="preview" target="_blank">NCS진단_NCS 직업역량진단결과</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/NCS진단_직업역량진단결과.html" class="preview" target="_blank">NCS진단_직업역량진단결과</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%ED%83%90%EB%82%98%EB%8A%94%EA%B8%B0%EC%97%85_%EB%A9%94%EC%9D%B8.html" class="preview" target="_blank">탐나는기업 메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%ED%83%90%EB%82%98%EB%8A%94%EA%B8%B0%EC%97%85_%ED%83%90%EB%82%98%EB%8A%94%EA%B8%B0%EC%97%85%EA%B4%80.html" class="preview" target="_blank">탐나는기업 탐나는기업관</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%ED%83%90%EB%82%98%EB%8A%94%EA%B8%B0%EC%97%85_%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0%EC%83%81%EC%84%B8.html" class="preview" target="_blank">탐나는기업 채용공고 상세보기</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EA%B3%B5%EA%B3%B5%EC%9D%BC%EC%9E%90%EB%A6%AC_%EB%A9%94%EC%9D%B8.html" class="preview" target="_blank">공공일자리 메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EA%B3%B5%EA%B3%B5%EC%9D%BC%EC%9E%90%EB%A6%AC_%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="preview" target="_blank">공공일자리 상세페이지</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EA%B3%B5%EA%B3%B5%EC%9D%BC%EC%9E%90%EB%A6%AC_%EA%B3%B5%EA%B3%B5%EA%B7%BC%EB%A1%9C%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80.html" class="preview" target="_blank">공공일자리 공공근로 상세페이지</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EC%B7%A8%EC%97%85%EB%A9%98%ED%86%A0%EB%A7%81_%EB%A9%94%EC%9D%B8.html" class="preview" target="_blank">취업멘토링 메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EC%B7%A8%EC%97%85%EC%97%AD%EB%9F%89%EA%B0%95%ED%99%94_%EB%A9%94%EC%9D%B8.html" class="preview" target="_blank">취업역량강화 메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%B0%95%EB%9E%8C%ED%9A%8C_%EB%A9%94%EC%9D%B8.html"
+		 class="preview" target="_blank">온라인채용박람회 메인</a></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%B0%95%EB%9E%8C%ED%9A%8C_%EC%83%81%EC%84%B8.html"
+		 class="preview" target="_blank">온라인채용박람회 상세</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%B0%95%EB%9E%8C%ED%9A%8C_%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0%EC%83%81%EC%84%B8.html"
+		 class="preview" target="_blank">온라인채용박람회 채용공고 상세</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/기업채용정보_채용정보_등록수정.html"
+		 class="preview" target="_blank">기업채용정보>채용정보>등록수정</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EB%A9%B4%EC%A0%91%EB%A7%A4%EC%B9%98%EC%97%85_%EB%A9%94%EC%9D%B8.html"
+		 class="preview" target="_blank">면접 매치업 메인</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>페이지</td>
+		<td><a href="html/%EB%A9%B4%EC%A0%91%EB%A7%A4%EC%B9%98%EC%97%85_%EC%84%9C%EB%B8%8C.html"
+		 class="preview" target="_blank">면접 매치업 서브</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>팝업</td>
+		<td><a href="html/%ED%9A%8C%EC%9B%90%ED%86%B5%ED%95%A9%EC%95%88%EB%82%B4_%ED%8C%9D%EC%97%85.html"
+		 class="preview" target="_blank">회원통합안내 팝업</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>뉴스레터</td>
+		<td><a href="html/%ED%9A%8C%EC%9B%90%ED%86%B5%ED%95%A9_%EB%A9%94%EC%9D%BC.html"
+		 class="preview" target="_blank">회원통합안내 메일</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>뉴스레터</td>
+		<td><a href="html/멘토링_메일.html"
+		 class="preview" target="_blank">멘토링 메일폼</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>뉴스레터</td>
+		<td><a href="html/멘토링_질문등록.html"
+		 class="preview" target="_blank">멘토링 질문등록 메일폼</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>이벤트</td>
+		<td><a href="html/event/03.html"
+		 class="preview" target="_blank">취업성공수기 이벤트</a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>팝업</td>
+		<td><a href="html/멘토활동증명서_팝업.html"
+		 class="preview" target="_blank">멘토활동증명서 팝업</a></td>
+	</tr>
+	</tbody>
+	</table>
+</div>
+.page_msk
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<script>
+	$(document).ready(function(){
+		$('.tbl_list tbody tr').each(function(){
+			var idx = $(this).index();
+			$(this).find('td:first-child').append(idx + 1);
+		});
+	});
+</script>
 </body>
-
 </html>
